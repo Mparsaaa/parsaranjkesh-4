@@ -1,0 +1,168 @@
+
+
+@font-face {
+  font-family: "spantan-bold";
+  src: url("../fonts/LeagueSpartan/LeagueSpartan-Bold.ttf");
+}
+@font-face {
+  font-family: "spantan-light";
+  src: url("../fonts/LeagueSpartan//LeagueSpartan-Light.ttf");
+}
+@font-face {
+  font-family: "spantan-Elight";
+  src: url("../fonts/LeagueSpartan//LeagueSpartan-ExtraLight.ttf");
+}
+:root {
+  --text-color-1: rgb(75 34 78);
+  --text-color-2: rgb(161, 44, 169);
+  --bg-color-1: #f6f2f7;
+  --bg-color-2: rgb(75 34 78);
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "spantan-bold";
+}
+body,
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    99deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(71, 0, 78, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  max-width: 1100px;
+  width: 90%;
+  min-height: 80vh;
+  background-color: #fff;
+  background-image: url("../image/bg-pattern-top-desktop.svg"),
+    url(../image/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card .card-body-top {
+  width: 85%;
+  height: 50%;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card .card-body-top .intro {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.container .card .card-body-top .intro h1 {
+  color: var(--text-color-1);
+  font-size: 54px;
+  letter-spacing: -1px;
+  margin-top: 12px;
+}
+.container .card .card-body-top .intro p {
+  font-family: "spantan-light";
+  margin-top: 12px;
+  color: var(--text-color-1);
+}
+
+.container .card .card-body-top .ratings {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.container .card .card-body-top .ratings .rating {
+  background: var(--bg-color-1);
+  color: var(--text-color-1);
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 5px;
+  border-radius: var(--border-radius);
+}
+.container .card .card-body-top .ratings .center {
+  margin-left: 40px;
+}
+.container .card .card-body-top .ratings .bottom {
+  margin-left: 80px;
+}
+
+.container .card .card-body-bottom {
+  width: 85%;
+  height: 50%;
+  padding: 10px 0px;
+  display: flex;
+  gap: 8px;
+}
+.container .card .card-body-bottom .cards {
+  width: 100%;
+  height: 200px;
+  background-color: var(--bg-color-2);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 10px 30px;
+  gap: 11px;
+}
+.container .card .card-body-bottom .cards .card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+.container .card .card-body-bottom .cards .card-header .info-profile h3 {
+  font-size: 17px;
+}
+.container .card .card-body-bottom .cards .card-header .info-profile p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: var(--text-color-2);
+}
+.container .card .card-body-bottom .cards .card-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.container .card .card-body-bottom .cards .card-body .card-text {
+  color: white;
+  font-size: 15px;
+  line-height: 16px;
+  font-family: "spantan-Elight";
+}
+.container .card .card-body-bottom .center {
+  margin-top: 20px;
+}
+.container .card .card-body-bottom .bottom {
+  margin-top: 40px;
+}
